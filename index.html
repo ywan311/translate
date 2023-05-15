@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>킁변환기</title>
+    </head>
+<body>
+
+<h1>ㅇ -> 킁</h1>
+<input type="text" id="text-input"/>
+<input type="button" id="trans-button" value="변환" onclick="translateDldmd()"/>
+
+</body>
+<script>
+function translateDldmd() {
+const re = /[아-잏]/g;
+let input = document.getElementById('text-input').value;
+let result = input.replaceAll(re,'킁');
+alert(result)
+return true;
+}
+
+</script>
+</html>
